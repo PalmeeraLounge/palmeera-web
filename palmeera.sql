@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 16 Sep 2024 pada 07.22
--- Versi server: 10.4.27-MariaDB
--- Versi PHP: 7.4.33
+-- Generation Time: Sep 20, 2024 at 04:41 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `category_news`
+-- Table structure for table `category_news`
 --
 
 CREATE TABLE `category_news` (
@@ -33,7 +33,7 @@ CREATE TABLE `category_news` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `category_news`
+-- Dumping data for table `category_news`
 --
 
 INSERT INTO `category_news` (`id_category`, `name_category`) VALUES
@@ -43,7 +43,7 @@ INSERT INTO `category_news` (`id_category`, `name_category`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `gallery`
+-- Table structure for table `gallery`
 --
 
 CREATE TABLE `gallery` (
@@ -53,16 +53,20 @@ CREATE TABLE `gallery` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `gallery`
+-- Dumping data for table `gallery`
 --
 
 INSERT INTO `gallery` (`id`, `image`, `description`) VALUES
-(11, '66e26ce114e63.png', 'PHA+aW5pIGFkYWxhaCBsb2dvIHBhbG1lZXJhIGxvdW5nZcKgPC9wPg==');
+(1, '66e8cd29e3514.jpg', 'PHA+UHJlbWl1bSBMb3VuZ2U8L3A+'),
+(2, '66e8ef321ecb4.jpg', 'PHA+UHJlbWl1bSBMb3VuZ2U8L3A+'),
+(3, '66e8ef3ef402b.jpg', 'PHA+UHJlbWl1bSBMb3VuZ2U8L3A+'),
+(4, '66e8efcc21cac.jpg', 'PHA+UHJlbWl1bSBMb3VuZ2U8L3A+'),
+(5, '66e8efd44ea4c.jpg', 'PHA+UHJlbWl1bSBMb3VuZ2U8L3A+');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `message`
+-- Table structure for table `message`
 --
 
 CREATE TABLE `message` (
@@ -75,16 +79,20 @@ CREATE TABLE `message` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `message`
+-- Dumping data for table `message`
 --
 
 INSERT INTO `message` (`id`, `name`, `email`, `phone`, `message`, `created_at`) VALUES
-(1, 'alex', 'alex@gmail.com', 892199999, 'maaf saya tibak bisa hadir', '2024-09-15 07:34:43');
+(1, 'alex', 'alex@gmail.com', 892199999, 'maaf saya tibak bisa hadir', '2024-09-15 07:34:43'),
+(2, 'Barry', 'admin@mail.com', 2147483647, 'tes', '2024-09-16 05:29:07'),
+(3, 'Bebeb Ranti', 'bebeb.ranti@gmail.com', 125475214, 'apa aja', '2024-09-16 05:35:14'),
+(7, 'Barry', 'bebeb.ranti@gmail.com', 0, 'yyyy', '2024-09-16 07:20:41'),
+(8, 'Bebeb Ranti', 'ranti.imoet@yahoo.com', 0, 'apa aja', '2024-09-17 02:33:00');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `news`
+-- Table structure for table `news`
 --
 
 CREATE TABLE `news` (
@@ -97,35 +105,39 @@ CREATE TABLE `news` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `news`
+-- Dumping data for table `news`
 --
 
 INSERT INTO `news` (`id`, `title`, `image`, `category`, `content`, `date`) VALUES
-(21, 'hahaha', '66e6de4b68628.png', 'Oprational', 'PHA+aGFoYWhhPC9wPg==', '2024-09-15');
+(23, 'Palmeera Lounge Kini Hadir dengan Fasilitas Lebih Lengkap dan Nyaman untuk Pengunjung', '', 'Operasional', 'PHA+UGFsbWVlcmEgTG91bmdlIGRlbmdhbiBiYW5nZ2EgbWVuZ3VtdW1rYW4gcGVtYmFydWFuIGxheWFuYW4gZGFuIGZhc2lsaXRhcyB5YW5nIHNlbWFraW4gbWVtYW5qYWthbiBwYXJhIHBlbmd1bmp1bmcuIE5pa21hdGkgc3Vhc2FuYSBtZXdhaCB5YW5nIHRlbmFuZywgbGVuZ2thcCBkZW5nYW4gYWtzZXMgV2lGaSBncmF0aXMsIGJlcmFnYW0gcGlsaWhhbiBtZW51IGlzdGltZXdhLCBzZXJ0YSBhcmVhIGJlcnNhbnRhaSB5YW5nIG55YW1hbi4mbmJzcDs8L3A+', '2024-09-16'),
+(24, 'Bergabunglah Bersama Kami: Kemitraan Strategis dengan Palmeera Lounge', '', 'Partnership', 'UGFsbWVlcmEgTG91bmdlIG1lbWJ1a2Ega2VzZW1wYXRhbiBiYWdpIG1pdHJhIHN0cmF0ZWdpcyB5YW5nIGluZ2luIGJlcmtvbGFib3Jhc2kgZGFsYW0gbWVuY2lwdGFrYW4gcGVuZ2FsYW1hbiBsYXlhbmFuIHByZW1pdW0gYmFnaSBwZWxhbmdnYW4ga2FtaS4gQmVyc2FtYSwga2l0YSBkYXBhdCBtZW1wZXJsdWFzIGphbmdrYXVhbiwgbWVuZ2hhZGlya2FuIGlub3Zhc2ksIGRhbiBtZW1iZXJpa2FuIG5pbGFpIHRhbWJhaCB5YW5nIGJlcmtlbGFuanV0YW4uJm5ic3A7PHA+PC9wPg==', '2024-09-16');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `newsletter`
+-- Table structure for table `newsletter`
 --
 
 CREATE TABLE `newsletter` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL
+  `email` varchar(255) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `newsletter`
+-- Dumping data for table `newsletter`
 --
 
-INSERT INTO `newsletter` (`id`, `name`, `email`) VALUES
-(1, 'andi', 'andi@gmail.com');
+INSERT INTO `newsletter` (`id`, `name`, `email`, `created_at`) VALUES
+(1, 'andi', 'andi@gmail.com', '2024-09-16 05:34:25'),
+(2, 'Sales', 'sales1.palmeeralounge@gmail.com', '2024-09-16 05:35:33'),
+(3, 'Sales', 'sales1.palmeeralounge@gmail.com', '2024-09-16 07:24:37');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `partnership`
+-- Table structure for table `partnership`
 --
 
 CREATE TABLE `partnership` (
@@ -147,7 +159,7 @@ CREATE TABLE `partnership` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `partnership`
+-- Dumping data for table `partnership`
 --
 
 INSERT INTO `partnership` (`id`, `agency_name`, `country`, `province`, `city`, `address`, `business_type`, `industry_registration_type`, `industry_registration_number`, `contact_person`, `phone_number`, `email`, `website`, `registration_date`, `company_logo`) VALUES
@@ -157,7 +169,7 @@ INSERT INTO `partnership` (`id`, `agency_name`, `country`, `province`, `city`, `
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `users`
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -167,7 +179,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `email`, `password`) VALUES
@@ -178,89 +190,89 @@ INSERT INTO `users` (`id`, `email`, `password`) VALUES
 --
 
 --
--- Indeks untuk tabel `category_news`
+-- Indexes for table `category_news`
 --
 ALTER TABLE `category_news`
   ADD PRIMARY KEY (`id_category`);
 
 --
--- Indeks untuk tabel `gallery`
+-- Indexes for table `gallery`
 --
 ALTER TABLE `gallery`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `message`
+-- Indexes for table `message`
 --
 ALTER TABLE `message`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `news`
+-- Indexes for table `news`
 --
 ALTER TABLE `news`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `newsletter`
+-- Indexes for table `newsletter`
 --
 ALTER TABLE `newsletter`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `partnership`
+-- Indexes for table `partnership`
 --
 ALTER TABLE `partnership`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `users`
+-- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `category_news`
+-- AUTO_INCREMENT for table `category_news`
 --
 ALTER TABLE `category_news`
   MODIFY `id_category` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT untuk tabel `gallery`
+-- AUTO_INCREMENT for table `gallery`
 --
 ALTER TABLE `gallery`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
--- AUTO_INCREMENT untuk tabel `message`
+-- AUTO_INCREMENT for table `message`
 --
 ALTER TABLE `message`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT untuk tabel `news`
+-- AUTO_INCREMENT for table `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
--- AUTO_INCREMENT untuk tabel `newsletter`
+-- AUTO_INCREMENT for table `newsletter`
 --
 ALTER TABLE `newsletter`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT untuk tabel `partnership`
+-- AUTO_INCREMENT for table `partnership`
 --
 ALTER TABLE `partnership`
   MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT untuk tabel `users`
+-- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
