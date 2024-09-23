@@ -353,20 +353,7 @@ include 'header.php';
         </div>
     </section>
     
-    
-    <!-- Script untuk inisialisasi peta -->
-    <div class="map-container"></div>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.064377792485!2d106.64991367588347!3d-6.122037893864642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a026ad44ff845%3A0xd8ea333e48efd9f6!2sTerminal%202%2C%20RT.001%2FRW.010%2C%20Pajang%2C%20Benda%2C%20Tangerang%20City%2C%20Banten%2015126!5e0!3m2!1sen!2sid!4v1726112725807!5m2!1sen!2sid"
-            width="1850"
-            height="450"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </div>
-    
+  <!--Sponsor-->
     <section class="sponsors-section">
     	<div class="auto-container">
 	<div class="sec-title-four">
@@ -535,13 +522,17 @@ if (mysqli_num_rows($data_news) > 0) {
                             <!--Footer Column-->
                         	<div class="footer-column col-md-6 col-sm-6 col-xs-12">
 								<div class="footer-widget tags-widget">
-                                	<h2>Pencarian Popular</h2>
-                                    <div class="widget-content">
-                                    	<ul class="tags-list">
-                                        <li><a href="premium.php">Premium Lounge</a></li>
-                                        <li><a href="standard.php">Standard Lounge</a></li>
-                                        </ul>
-                                    </div>
+                                	<h2>Maps</h2>
+                                    <div class="map-container"></div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.064377792485!2d106.64991367588347!3d-6.122037893864642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a026ad44ff845%3A0xd8ea333e48efd9f6!2sTerminal%202%2C%20RT.001%2FRW.010%2C%20Pajang%2C%20Benda%2C%20Tangerang%20City%2C%20Banten%2015126!5e0!3m2!1sen!2sid!4v1726112725807!5m2!1sen!2sid"
+            width="250"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
                                 </div>
                             </div>
                             
