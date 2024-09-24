@@ -75,26 +75,28 @@ $result = mysqli_query($koneksi, "SELECT * FROM partnership ");
                 class="logo-name">Palmeera Lounge</span>
             </a>
           </div>
-          <ul class="sidebar-menu">
-           
+          <ul class="sidebar-menu"> 
           <li >
               <a href="dashboard.php" class="nav-link"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
             </li>
-            <li>
+            <li >
               <a class="nav-link" href="news.php"><i class="fas fa-newspaper"></i><span>News</span></a>
             </li> 
             <li class="dropdown active">
-              <a class="nav-link" href="partnership.php"> <i class="fas fa-building"></i><span>Partnership</span></a>
+              <a class="nav-link" href="partnership.php"> <i class="fas fa-building"></i></i><span>Partnership</span></a>
             </li>
             <li>
               <a class="nav-link" href="gallery.php"> <i class="fas fa-images"></i></i><span>Gallery</span></a>
-            </li> 
+            </li>
             <li>
               <a class="nav-link" href="newsletter.php"> <i class="fas fa-users"></i></i><span>Newsletter</span></a>
             </li>
             <li>
               <a class="nav-link" href="message.php"> <i class="fas fa-envelope"></i></i><span>Message</span></a>
-            </li>      
+            </li> 
+            <li>
+              <a class="nav-link" href="users.php"> <i class="fas fa-users"></i></i><span>Users</span></a>
+            </li>         
           </ul>
         </aside>
       </div>

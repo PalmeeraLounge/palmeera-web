@@ -75,8 +75,7 @@ $result = mysqli_query($koneksi, "SELECT * FROM news");
                 class="logo-name">Palmeera Lounge</span>
             </a>
           </div>
-          <ul class="sidebar-menu">
-           
+          <ul class="sidebar-menu"> 
           <li >
               <a href="dashboard.php" class="nav-link"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
             </li>
@@ -94,7 +93,10 @@ $result = mysqli_query($koneksi, "SELECT * FROM news");
             </li>
             <li>
               <a class="nav-link" href="message.php"> <i class="fas fa-envelope"></i></i><span>Message</span></a>
-            </li>       
+            </li> 
+            <li>
+              <a class="nav-link" href="users.php"> <i class="fas fa-users"></i></i><span>Users</span></a>
+            </li>         
           </ul>
         </aside>
       </div>

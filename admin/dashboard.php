@@ -21,6 +21,11 @@ $jumlah_gallery = mysqli_num_rows($data_gallery);
 
 $data_newsletter = mysqli_query($koneksi, "SELECT * FROM newsletter");
 $jumlah_newsletter = mysqli_num_rows($data_newsletter);
+
+$data_users = mysqli_query($koneksi, "SELECT * FROM users");
+$jumlah_users = mysqli_num_rows($data_users);
+
+
 ?>
 
 <!DOCTYPE html>
@@ -83,17 +88,16 @@ $jumlah_newsletter = mysqli_num_rows($data_newsletter);
                 class="logo-name">Palmeera Lounge</span>
             </a>
           </div>
-          <ul class="sidebar-menu">
-           
-            <li class="dropdown active">
+          <ul class="sidebar-menu"> 
+          <li class="dropdown active">
               <a href="dashboard.php" class="nav-link"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
             </li>
-            <li>
+            <li >
               <a class="nav-link" href="news.php"><i class="fas fa-newspaper"></i><span>News</span></a>
             </li> 
             <li>
               <a class="nav-link" href="partnership.php"> <i class="fas fa-building"></i></i><span>Partnership</span></a>
-            </li> 
+            </li>
             <li>
               <a class="nav-link" href="gallery.php"> <i class="fas fa-images"></i></i><span>Gallery</span></a>
             </li>
@@ -102,7 +106,10 @@ $jumlah_newsletter = mysqli_num_rows($data_newsletter);
             </li>
             <li>
               <a class="nav-link" href="message.php"> <i class="fas fa-envelope"></i></i><span>Message</span></a>
-            </li>     
+            </li> 
+            <li>
+              <a class="nav-link" href="users.php"> <i class="fas fa-users"></i></i><span>Users</span></a>
+            </li>         
           </ul>
         </aside>
       </div>
@@ -202,9 +209,29 @@ $jumlah_newsletter = mysqli_num_rows($data_newsletter);
                     <div class="row ">
                       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
                         <div class="card-content">
+                          <h5 class="font-15">Total Users</h5>
+                          <h2 class="mb-3 font-18"><?php echo $jumlah_users ?></h2>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
+                        <div class="banner-img">
+                          <img src="assets/img/banner/partnership.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="card">
+                <div class="card-statistic-4">
+                  <div class="align-items-center justify-content-between">
+                    <div class="row ">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
+                        <div class="card-content">
                           <h5 class="font-15">Total Message</h5>
                           <h2 class="mb-3 font-18"><?php echo $jumlah_message ?></h2>
-
                         </div>
                       </div>
                       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
