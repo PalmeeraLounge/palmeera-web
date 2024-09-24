@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 20, 2024 at 04:41 AM
+-- Generation Time: Sep 24, 2024 at 02:06 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -78,17 +78,6 @@ CREATE TABLE `message` (
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `message`
---
-
-INSERT INTO `message` (`id`, `name`, `email`, `phone`, `message`, `created_at`) VALUES
-(1, 'alex', 'alex@gmail.com', 892199999, 'maaf saya tibak bisa hadir', '2024-09-15 07:34:43'),
-(2, 'Barry', 'admin@mail.com', 2147483647, 'tes', '2024-09-16 05:29:07'),
-(3, 'Bebeb Ranti', 'bebeb.ranti@gmail.com', 125475214, 'apa aja', '2024-09-16 05:35:14'),
-(7, 'Barry', 'bebeb.ranti@gmail.com', 0, 'yyyy', '2024-09-16 07:20:41'),
-(8, 'Bebeb Ranti', 'ranti.imoet@yahoo.com', 0, 'apa aja', '2024-09-17 02:33:00');
-
 -- --------------------------------------------------------
 
 --
@@ -125,15 +114,6 @@ CREATE TABLE `newsletter` (
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `newsletter`
---
-
-INSERT INTO `newsletter` (`id`, `name`, `email`, `created_at`) VALUES
-(1, 'andi', 'andi@gmail.com', '2024-09-16 05:34:25'),
-(2, 'Sales', 'sales1.palmeeralounge@gmail.com', '2024-09-16 05:35:33'),
-(3, 'Sales', 'sales1.palmeeralounge@gmail.com', '2024-09-16 07:24:37');
-
 -- --------------------------------------------------------
 
 --
@@ -158,14 +138,6 @@ CREATE TABLE `partnership` (
   `company_logo` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `partnership`
---
-
-INSERT INTO `partnership` (`id`, `agency_name`, `country`, `province`, `city`, `address`, `business_type`, `industry_registration_type`, `industry_registration_number`, `contact_person`, `phone_number`, `email`, `website`, `registration_date`, `company_logo`) VALUES
-(8, 'Agency 1 edit', 'Afghanistan', 'DKI Jakarta edit', 'jakarta edit', 'salemba edit', 'Other', 'Other', 1234567890, 'anton edit', 2147483647, 'antonedit@gmail.com', 'antonedit.com', '2024-09-11', '66e19c7b53a8b.png'),
-(9, 'Agency 2', 'Åland Islands', 'Jawa barat', 'bekasi', 'galaxy', 'Hotels', 'IATA', 123, 'lala', 1234512345, 'lala@gmail.com', 'lala.com', '2024-09-11', '66e19cc47fa87.jpg');
-
 -- --------------------------------------------------------
 
 --
@@ -183,7 +155,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `email`, `password`) VALUES
-(2, 'admin@admin.com', '21232f297a57a5a743894a0e4a801fc3');
+(1, 'it.palmeeralounge@gmail.com', 'e52db4efe8f226a0eea3611f652212e9'),
+(2, 'tes@gmail.com', '21232f297a57a5a743894a0e4a801fc3');
 
 --
 -- Indexes for dumped tables
