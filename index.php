@@ -512,7 +512,7 @@ if (mysqli_num_rows($data_news) > 0) {
                                              Nikmati fasilitas premium, layanan personal, dan suasana yang tenang untuk membuat perjalanan Anda semakin menyenangkan.</div>
                                         <ul class="contact-info">
                                         	<li><span class="icon fa fa-map-marker"></span>Soekarno-Hatta International 2F, Indonesia</li>
-                                            <li><span class="icon fa fa-phone"></span>(62) 812-3456-789</li>
+                                            <li><span class="icon fa fa-phone"></span>(+62) 817-7088-1390</li>
                                             <li><span class="icon fa fa-envelope-o"></span>sales1.palmeeralounge@gmail.com</li>
                                         </ul>
                                     </div>

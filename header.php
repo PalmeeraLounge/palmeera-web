@@ -54,7 +54,7 @@
                          <!-- Contact Info -->
                     	<ul>
                             <li><span class="fa fa-envelope-o"></span> <a href="mailto:sales1.palmeeralounge@gmail.com">sales1.palmeeralounge@gmail.com</a></li>
-                            <li><span class="fa fa-phone"></span>No Telepon: +62 8123456789</li>
+                            <li><span class="fa fa-phone"></span>No Telepon: +62 817-7088-1390</li>
                             <li><span class="fa fa-clock-o"></span>Senin - Minggu : 09:00 - 17:00</li>
                         </ul>
                     </div>
