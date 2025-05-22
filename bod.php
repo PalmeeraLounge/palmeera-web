@@ -35,12 +35,12 @@ include 'header.php';
                     	<figure class="image-box">
                         	<img src="images/resource/BOD.png" alt="">
                             <div class="overlay">
-                            <div class="desc-text">Owner Representative</div>
+                            <div class="desc-text">Managing Directors</div>
                             </div>
                         </figure>
                         <div class="lower-content">
-                        	<h3><a href="team-single.html">Tomi Isnawan</a></h3>
-                            <div class="designation">Owner Representative</div>
+                        	<h3><a href="team-single.html">Tomi</a></h3>
+                            <div class="designation">Managing Directors</div>
                             <div class="links-box"><a class="theme-btn read-more" href="#">Enter Profile <span class="fa fa-caret-right"></span></a></div>
                         </div>
                     </div>
@@ -77,44 +77,6 @@ include 'header.php';
                             </div>
                         </figure>
                         <div class="lower-content">
-                        	<h3><a href="team-single.html">Mirza Iskandar</a></h3>
-                            <div class="designation">Board Of Directors</div>
-                            <div class="links-box"><a class="theme-btn read-more" href="#">Enter Profile <span class="fa fa-caret-right"></span></a></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!--Team Member-->
-                <div class="team-member-one col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                	<div class="inner-box">
-                    	<figure class="image-box">
-                        <img src="images/resource/BOD.png" alt="">
-                            <div class="overlay">
-                            	<ul class="social-links">
-                                <div class="desc-text">Board Of Directors</div>
-                                </ul>
-                            </div>
-                        </figure>
-                        <div class="lower-content">
-                        	<h3><a href="team-single.html">Sapto Kashariyanto</a></h3>
-                            <div class="designation">Board Of Directors</div>
-                            <div class="links-box"><a class="theme-btn read-more" href="#">Enter Profile <span class="fa fa-caret-right"></span></a></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!--Team Member-->
-                <div class="team-member-one col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                	<div class="inner-box">
-                    	<figure class="image-box">
-                        <img src="images/resource/BOD.png" alt="">
-                            <div class="overlay">
-                            	<ul class="social-links">
-                                <div class="desc-text">Board Of Directors</div>
-                                </ul>
-                            </div>
-                        </figure>
-                        <div class="lower-content">
                         	<h3><a href="team-single.html">RM Koentjoro</a></h3>
                             <div class="designation">Board Of Directors</div>
                             <div class="links-box"><a class="theme-btn read-more" href="#">Enter Profile <span class="fa fa-caret-right"></span></a></div>
@@ -129,13 +91,13 @@ include 'header.php';
                         <img src="images/resource/BOD.png" alt="">
                             <div class="overlay">
                             	<ul class="social-links">
-                                <div class="desc-text">General Manager</div>
+                                <div class="desc-text">Lounge Manager</div>
                                 </ul>
                             </div>
                         </figure>
                         <div class="lower-content">
                         	<h3><a href="team-single.html">Ary Risdijawan</a></h3>
-                            <div class="designation">General Manager</div>
+                            <div class="designation">Lounge Manager</div>
                             <div class="links-box"><a class="theme-btn read-more" href="#">Enter Profile <span class="fa fa-caret-right"></span></a></div>
                         </div>
                     </div>
